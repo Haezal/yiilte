@@ -1,1 +1,1 @@
-# Yii With Bootstrap 3 (AdminLTE)
+# Yii 1 With Bootstrap 3 (AdminLTE)

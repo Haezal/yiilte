@@ -11,7 +11,7 @@ Yii::setPathOfAlias('booster', dirname(__FILE__).'/../extensions/booster');
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Tadika ABS',
+	'name'=>'Yii LTE',
 
 	// preloading 'log' component
 	'preload'=>array('log', 'booster'),
@@ -75,12 +75,6 @@ return array(
 
 	// application components
 	'components'=>array(
-		// 'user'=>array(
-  //           // enable cookie-based authentication
-  //           'class' => 'WebUser',
-  //           'allowAutoLogin'=>true,
-  //           'loginUrl' => array('/user/login'),
-  //       ),
 		'user'=>array(
                 'class'=>'RWebUser',
                 // enable cookie-based authentication
@@ -101,7 +95,6 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),

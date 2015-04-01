@@ -19,27 +19,27 @@ $this->breadcrumbs=array(
   <?php echo CHtml::errorSummary($model); ?>
   
   <div class="form-group has-feedback">
-    <?php //echo CHtml::activeLabelEx($model,'username'); ?>
-    <?php echo CHtml::activeTextField($model,'username', array('class'=>'form-control', 'placeHolder'=>'Kata Nama')) ?>
-    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+    <?php echo CHtml::activeLabelEx($model,'username'); ?>
+    <?php echo CHtml::activeTextField($model,'username', array('class'=>'form-control', 'placeHolder'=>'Username or Email')) ?>
+    
   </div>
   
   <div class="form-group has-feedback">
-    <?php //echo CHtml::activeLabelEx($model,'password'); ?>
+    <?php echo CHtml::activeLabelEx($model,'password'); ?>
     <?php echo CHtml::activePasswordField($model,'password', array('class'=>'form-control')) ?>
-    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+    
   </div>
   
 
   <div class="row">
-    <div class="col-xs-8">    
+    <div class="col-xs-9">    
       <div class="checkbox icheck">
         <label>
           <?php echo CHtml::activeLabelEx($model,'rememberMe'); ?> <?php echo CHtml::activeCheckBox($model,'rememberMe'); ?>
         </label>
       </div>                        
     </div><!-- /.col -->
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
     </div><!-- /.col -->
   </div>

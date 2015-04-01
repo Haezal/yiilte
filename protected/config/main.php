@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 
 // load YiiBooster
-Yii::setPathOfAlias('booster', dirname(__FILE__).'/../extensions/booster/src');
+Yii::setPathOfAlias('booster', dirname(__FILE__).'/../extensions/booster');
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',

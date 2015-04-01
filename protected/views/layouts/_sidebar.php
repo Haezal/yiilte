@@ -22,9 +22,9 @@
 
     <?php } ?>
   <?php if (Yii::app()->user->isGuest): ?>
-        <li><a href="#"><span>Homepage</span></a></li>
-        <li><a href="#"><span>About Us</span></a></li>
-        <li><a href="#"><span>Contact Us</span></a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('/') ?>"><span>Homepage</span></a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('/site/page?view=about') ?>"><span>About Us</span></a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('/site/contact') ?>"><span>Contact Us</span></a></li>
         <li><a href="<?php echo Yii::app()->createUrl('/user/login') ?>"><span>Login</span></a></li>
         <li><a href="<?php echo Yii::app()->createUrl('/user/registration') ?>"><span>Register</span></a></li>
   <?php endif ?>

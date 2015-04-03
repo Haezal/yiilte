@@ -8,6 +8,12 @@
 # assets folder
 /assets
 
+# runtime folder
+/protected/runtime
+
+# database configuration
+/protected/config/database.php
+
 # phpstorm project files
 .idea
 

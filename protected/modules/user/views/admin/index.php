@@ -13,7 +13,7 @@ $this->menu=array(
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
-    $('.search-form').toggle();
+    $('.search-form').toggle('fadein');
     return false;
 });	
 $('.search-form form').submit(function(){
@@ -32,8 +32,9 @@ $('.search-form form').submit(function(){
     'model'=>$model,
 )); ?>
 </div><!-- search-form -->
-
-<div class="box box-danger">
+<br>
+<br>
+<div class="box box-primary box-solid">
 	<div class="box-header">
 		<h3 class="box-title">Senarai Pengguna Sistem</h3>
 	</div>

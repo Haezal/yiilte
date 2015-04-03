@@ -1,4 +1,7 @@
-<div class="box">
+<div class="box box-solid box-default">
+<div class="box-header">
+    <h3 class="box-title">Carian</h3>
+</div>
 <div class="box-body">
 
     <?php $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
